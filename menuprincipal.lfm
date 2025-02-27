@@ -1,0 +1,60 @@
+object MenuPrincipalF: TMenuPrincipalF
+  Left = 614
+  Height = 387
+  Top = 189
+  Width = 655
+  Caption = 'Menu Principal - Sistema de Orçamento'
+  Menu = MainMenu1
+  LCLVersion = '3.8.0.0'
+  object MainMenu1: TMainMenu
+    Left = 32
+    Top = 8
+    object MNCadastro: TMenuItem
+      Caption = 'Cadastros'
+      object MNcategoriaC: TMenuItem
+        Caption = 'Categorias'
+        OnClick = MNcategoriaCClick
+      end
+      object MNclienteC: TMenuItem
+        Caption = 'Clientes'
+      end
+      object MNprodutoC: TMenuItem
+        Caption = 'Produtos'
+      end
+      object MNusuariosC: TMenuItem
+        Caption = 'Usuários'
+      end
+    end
+    object MNVendas: TMenuItem
+      Caption = 'Vendas'
+      object MNorcamentoV: TMenuItem
+        Caption = 'Orçamentos'
+      end
+    end
+    object MenuItem8: TMenuItem
+      Caption = 'Relatórios'
+      object MNclienteR: TMenuItem
+        Caption = 'Clientes'
+      end
+      object MNprodutoR: TMenuItem
+        Caption = 'Produtos'
+      end
+      object MenuItem11: TMenuItem
+        Caption = 'Orçamentos'
+      end
+      object MNcategoriasR: TMenuItem
+        Caption = 'Categorias'
+      end
+      object MNreltestclienteR: TMenuItem
+        Caption = 'REL TESTE CLIENTE'
+      end
+    end
+    object MNSobre: TMenuItem
+      Caption = 'Sobre'
+    end
+    object MNSair: TMenuItem
+      Caption = 'Sair'
+      OnClick = MNSairClick
+    end
+  end
+end

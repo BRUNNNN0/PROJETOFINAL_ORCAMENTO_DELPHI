@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="Projeto_final_SistemaOrcamento.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="24"/>
+      </Unit>
+      <Unit>
+        <Filename Value="xcadmodelo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="XcadModeloF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="XcadModelo"/>
+        <TopLine Value="59"/>
+        <CursorPos X="9" Y="94"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="menuprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MenuPrincipalF"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="MenuPrincipal"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="26"/>
+        <CursorPos Y="61"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadastrocategoriaf.pas"/>
+        <ComponentName Value="XcadModeloF1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadastroCategoriaF"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadastrocategoria.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadastroCategoriaF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadastroCategoria"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="8"/>
+        <CursorPos X="5" Y="39"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="31" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="30" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="29" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="28" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="27" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="28" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="29" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="30" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="32" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="31" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="32" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="51" Column="31" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="52" Column="31" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="58" Column="36" TopLine="26"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="64" Column="9" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="75" Column="36" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="65" Column="38" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="79" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="86" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="73" Column="39" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="86" Column="39" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="xcadmodelo.pas"/>
+        <Caret Line="79" Column="40" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="cadastrocategoria.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="8" Column="82" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="59" Column="29" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="cadastrocategoria.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="cadastrocategoria.pas"/>
+        <Caret Line="39" Column="25" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="58" TopLine="26"/>
+      </Position>
+      <Position>
+        <Filename Value="cadastrocategoria.pas"/>
+        <Caret Line="39" Column="25" TopLine="8"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

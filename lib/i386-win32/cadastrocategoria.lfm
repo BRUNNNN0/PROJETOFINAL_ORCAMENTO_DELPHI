@@ -1,0 +1,70 @@
+inherited CadastroCategoriaF: TCadastroCategoriaF
+  Caption = 'Cadastro de Categoria'
+  ClientHeight = 634
+  ClientWidth = 828
+  OnClose = FormClose
+  inherited PageControl1: TPageControl
+    ActivePage = AbaPesquisar
+    TabIndex = 0
+    inherited AbaPesquisar: TTabSheet
+      inherited Panel1: TPanel
+        object edirPesquisarID: TEdit[3]
+          Left = 88
+          Height = 23
+          Top = 25
+          Width = 40
+          NumbersOnly = True
+          TabOrder = 1
+        end
+      end
+    end
+    inherited AbaCadastro: TTabSheet
+      inherited Panel3: TPanel
+        TabOrder = 1
+      end
+      inherited Panel4: TPanel
+        TabOrder = 3
+      end
+      object Label2: TLabel[2]
+        Left = 75
+        Height = 20
+        Top = 110
+        Width = 20
+        Caption = 'ID:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -15
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label3: TLabel[3]
+        Left = 24
+        Height = 20
+        Top = 145
+        Width = 71
+        Caption = 'Categoria:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -15
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object editIDcate: TEdit[4]
+        Left = 104
+        Height = 23
+        Top = 109
+        Width = 32
+        TabOrder = 0
+      end
+      object editCategoria: TEdit[5]
+        Left = 104
+        Height = 23
+        Top = 144
+        Width = 240
+        TabOrder = 2
+      end
+    end
+  end
+end
