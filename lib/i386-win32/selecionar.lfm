@@ -1,0 +1,65 @@
+object SelecionarF: TSelecionarF
+  Left = 990
+  Height = 370
+  Top = 338
+  Width = 630
+  BorderIcons = []
+  Caption = 'Selecionar'
+  ClientHeight = 370
+  ClientWidth = 630
+  LCLVersion = '3.8.0.0'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 314
+    Top = 56
+    Width = 630
+    Align = alClient
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 56
+    Top = 0
+    Width = 630
+    Align = alTop
+    ClientHeight = 56
+    ClientWidth = 630
+    TabOrder = 1
+    object EditPesquisarSC: TEdit
+      Left = 144
+      Height = 23
+      Top = 18
+      Width = 40
+      TabOrder = 0
+    end
+    object Label1: TLabel
+      Left = 16
+      Height = 20
+      Top = 18
+      Width = 119
+      Caption = 'Pesquisar por ID:'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object SpeedButton1: TSpeedButton
+      Left = 192
+      Height = 22
+      Top = 18
+      Width = 24
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 314
+    Top = 56
+    Width = 630
+    Align = alClient
+    Color = clWindow
+    Columns = <>
+    TabOrder = 2
+  end
+end

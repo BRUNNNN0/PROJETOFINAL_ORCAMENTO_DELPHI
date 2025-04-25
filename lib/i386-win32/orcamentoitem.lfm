@@ -1,0 +1,146 @@
+object OrcamentoItemF: TOrcamentoItemF
+  Left = 739
+  Height = 211
+  Top = 288
+  Width = 363
+  Caption = 'Inserir Item'
+  ClientHeight = 211
+  ClientWidth = 363
+  LCLVersion = '3.8.0.0'
+  object Label1: TLabel
+    Left = 52
+    Height = 17
+    Top = 13
+    Width = 18
+    Caption = 'ID:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 17
+    Top = 51
+    Width = 54
+    Caption = 'Produto:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 120
+    Height = 25
+    Top = 10
+    Width = 32
+    Caption = '...'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 17
+    Top = 88
+    Width = 54
+    Caption = 'VL. Unit.'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 168
+    Height = 17
+    Top = 88
+    Width = 34
+    Caption = 'Qtde.'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object btnInserir: TButton
+    Left = 263
+    Height = 25
+    Top = 165
+    Width = 75
+    Anchors = [akBottom]
+    Caption = 'Inserir'
+    TabOrder = 1
+    OnClick = btnInserirClick
+  end
+  object Label5: TLabel
+    Left = 10
+    Height = 17
+    Top = 168
+    Width = 59
+    Anchors = [akBottom]
+    Caption = 'VL. Total:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Button3: TButton
+    Left = 178
+    Height = 25
+    Top = 165
+    Width = 75
+    Anchors = [akBottom]
+    Caption = 'Cancelar'
+    TabOrder = 2
+  end
+  object editVLtotal: TEdit
+    Left = 76
+    Height = 23
+    Top = 165
+    Width = 88
+    Anchors = [akBottom]
+    Enabled = False
+    TabOrder = 3
+  end
+  object editQtde: TEdit
+    Left = 208
+    Height = 23
+    Top = 88
+    Width = 32
+    TabOrder = 4
+    OnExit = editQtdeExit
+  end
+  object editVLUNIT: TEdit
+    Left = 80
+    Height = 23
+    Top = 88
+    Width = 72
+    Enabled = False
+    TabOrder = 5
+  end
+  object editPrudotoItem: TEdit
+    Left = 80
+    Height = 23
+    Top = 48
+    Width = 160
+    Enabled = False
+    TabOrder = 6
+  end
+  object editIDitem: TEdit
+    Left = 80
+    Height = 23
+    Top = 10
+    Width = 32
+    Enabled = False
+    TabOrder = 7
+  end
+end

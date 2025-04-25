@@ -1,0 +1,77 @@
+inherited SelecionarClientesF: TSelecionarClientesF
+  Height = 233
+  Width = 526
+  ClientHeight = 233
+  ClientWidth = 526
+  inherited PageControl1: TPageControl
+    Height = 177
+    Width = 526
+  end
+  inherited Panel1: TPanel
+    Width = 526
+    ClientWidth = 526
+  end
+  inherited DBGrid1: TDBGrid
+    Height = 177
+    Width = 526
+    Columns = <    
+      item
+        Alignment = taCenter
+        PickList.Strings = (        )
+        Title.Alignment = taCenter
+        Title.Font.CharSet = ANSI_CHARSET
+        Title.Font.Pitch = fpVariable
+        Title.Font.Quality = fqDraft
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'ID'
+        Width = 45
+        FieldName = 'clienteid'
+      end    
+      item
+        PickList.Strings = (        )
+        Title.Font.CharSet = ANSI_CHARSET
+        Title.Font.Pitch = fpVariable
+        Title.Font.Quality = fqDraft
+        Title.Font.Style = [fsBold]
+        Title.Caption = 'NOME DO CLIENTE'
+        Width = 450
+        FieldName = 'nome_cliente'
+      end>
+    DataSource = DataSource1
+    OnDblClick = DBGrid1DblClick
+  end
+  object ZQuery1: TZQuery[3]
+    Connection = DataModuleF.ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select clienteid, nome_cliente from cliente;'
+    )
+    Params = <>
+    Left = 488
+    Top = 8
+    object ZQuery1clienteid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'clienteid'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ZQuery1nome_cliente: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'nome_cliente'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 100
+    end
+  end
+  object DataSource1: TDataSource[4]
+    DataSet = ZQuery1
+    Left = 416
+    Top = 8
+  end
+end

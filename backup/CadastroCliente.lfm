@@ -1,0 +1,398 @@
+inherited CadastroClienteF: TCadastroClienteF
+  Left = 502
+  Height = 453
+  Top = 316
+  Width = 731
+  Caption = 'Sistema eight - Cadastro de clientes'
+  ClientHeight = 0
+  ClientWidth = 0
+  OnClose = FormClose
+  OnCreate = FormCreate
+  inherited PageControl1: TPageControl
+    Height = 453
+    Width = 731
+    inherited AbaPesquisar: TTabSheet
+      ClientHeight = 425
+      ClientWidth = 723
+      inherited Panel1: TPanel
+        Width = 723
+        ClientWidth = 723
+        inherited SpeedButton1: TSpeedButton
+          Left = 184
+          Top = 26
+          OnClick = SpeedButton1Click
+        end
+        inherited Label1: TLabel
+          Width = 106
+          Caption = 'Buscar código: '
+        end
+        inherited BtnNovo: TBitBtn
+          Left = 628
+          OnClick = BtnNovoClick
+          TabOrder = 1
+        end
+        object EditPesquisa: TEdit[3]
+          Left = 144
+          Height = 23
+          Top = 26
+          Width = 32
+          TabOrder = 0
+        end
+      end
+      inherited Panel2: TPanel
+        Top = 355
+        Width = 723
+        ClientWidth = 723
+        TabOrder = 2
+        inherited BtnSair: TBitBtn
+          Left = 628
+        end
+      end
+      inherited DBGrid1: TDBGrid
+        Height = 285
+        Width = 723
+        Columns = <        
+          item
+            Alignment = taCenter
+            Font.CharSet = ANSI_CHARSET
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Código'
+            Width = 70
+            FieldName = 'clienteid'
+          end        
+          item
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Nome do cliente'
+            Width = 300
+            FieldName = 'nome_cliente'
+          end        
+          item
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'CPF/CNPJ'
+            Width = 140
+            FieldName = 'cpf_cnpj_cliente'
+          end        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Tipo de cliente'
+            Width = 120
+            FieldName = 'tipo_cliente'
+          end>
+        DataSource = DataSource1
+        ReadOnly = True
+        TabOrder = 1
+      end
+    end
+    inherited AbaCadastro: TTabSheet
+      ClientHeight = 425
+      ClientWidth = 723
+      ParentFont = False
+      inherited Panel3: TPanel
+        Width = 723
+        TabOrder = 4
+      end
+      inherited Panel4: TPanel
+        Top = 355
+        Width = 723
+        ClientWidth = 723
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 5
+        inherited BtnCancelar: TBitBtn
+          Left = 615
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -19
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          OnClick = BtnCancelarClick
+          ParentFont = False
+        end
+        inherited BtnGravar: TBitBtn
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -19
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          OnClick = BtnGravarClick
+          ParentFont = False
+        end
+        inherited BtnExcluir: TBitBtn
+          Left = 492
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -19
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          OnClick = BtnExcluirClick
+          ParentFont = False
+        end
+      end
+      object Label2: TLabel[2]
+        Left = 224
+        Height = 25
+        Top = 121
+        Width = 25
+        Caption = 'ID:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label4: TLabel[3]
+        Left = 156
+        Height = 25
+        Top = 297
+        Width = 93
+        Caption = 'CPF/CNPJ:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label5: TLabel[4]
+        Left = 72
+        Height = 25
+        Top = 249
+        Width = 177
+        Caption = 'Nome/Razão Social:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object DBEdit1: TDBEdit[5]
+        Left = 256
+        Height = 29
+        Top = 120
+        Width = 32
+        DataField = 'clienteid'
+        DataSource = DataSource1
+        Alignment = taRightJustify
+        Color = clScrollBar
+        DragCursor = crDefault
+        Enabled = False
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 3
+        TabStop = False
+      end
+      object DBEdit2: TDBEdit[6]
+        Left = 256
+        Height = 29
+        Top = 248
+        Width = 256
+        DataField = 'nome_cliente'
+        DataSource = DataSource1
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 100
+        ParentFont = False
+        TabOrder = 0
+      end
+      object DBEdit3: TDBEdit[7]
+        Left = 256
+        Height = 29
+        Top = 296
+        Width = 160
+        DataField = 'cpf_cnpj_cliente'
+        DataSource = DataSource1
+        Enabled = False
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 18
+        ParentFont = False
+        TabOrder = 1
+        OnEnter = DBEdit3Enter
+      end
+      object DBRadioGroup1: TDBRadioGroup[8]
+        Left = 272
+        Height = 57
+        Top = 160
+        Width = 272
+        AutoFill = True
+        Caption = 'Tipo Cliente ( *obrigatorio!*)'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 2
+        Columns = 2
+        DataField = 'tipo_cliente'
+        DataSource = DataSource1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        Items.Strings = (
+          'F'
+          'J'
+        )
+        OnChange = DBRadioGroup1Change
+        ParentFont = False
+        TabOrder = 2
+      end
+      object Label6: TLabel[9]
+        Left = 272
+        Height = 17
+        Top = 216
+        Width = 220
+        Caption = '(  F - Física        /        J - Jurídica  )'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -13
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentFont = False
+      end
+    end
+  end
+  object TabelaCliente: TZQuery[1]
+    Connection = DataModuleF.ZConnection1
+    AfterInsert = TabelaClienteAfterInsert
+    UpdateObject = ZUpdateSQL1
+    SQL.Strings = (
+      'select * from cliente; '
+    )
+    Params = <>
+    Left = 376
+    Top = 40
+    object TabelaClienteclienteid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'clienteid'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object TabelaClientetipo_cliente: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'tipo_cliente'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+    object TabelaClientecpf_cnpj_cliente: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'cpf_cnpj_cliente'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 18
+    end
+    object TabelaClientenome_cliente: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'nome_cliente'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 100
+    end
+  end
+  object ZUpdateSQL1: TZUpdateSQL[2]
+    DeleteSQL.Strings = (
+      'DELETE FROM cliente'
+      'WHERE'
+      '  cliente.clienteid = :OLD_clienteid'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO cliente'
+      '  (clienteid, tipo_cliente, cpf_cnpj_cliente, nome_cliente)'
+      'VALUES'
+      '  (:clienteid, :tipo_cliente, :cpf_cnpj_cliente, :nome_cliente)'
+    )
+    ModifySQL.Strings = (
+      'UPDATE cliente SET'
+      '  clienteid = :clienteid,'
+      '  tipo_cliente = :tipo_cliente,'
+      '  cpf_cnpj_cliente = :cpf_cnpj_cliente,'
+      '  nome_cliente = :nome_cliente'
+      'WHERE'
+      '  cliente.clienteid = :OLD_clienteid'
+    )
+    UseSequenceFieldForRefreshSQL = False
+    Left = 464
+    Top = 40
+    ParamData = <    
+      item
+        Name = 'clienteid'
+      end    
+      item
+        Name = 'tipo_cliente'
+      end    
+      item
+        Name = 'cpf_cnpj_cliente'
+      end    
+      item
+        Name = 'nome_cliente'
+      end    
+      item
+        Name = 'OLD_clienteid'
+      end>
+  end
+  object DataSource1: TDataSource[3]
+    DataSet = TabelaCliente
+    OnDataChange = DataSource1DataChange
+    Left = 288
+    Top = 40
+  end
+  object ZQuery1: TZQuery[4]
+    Params = <>
+    Left = 544
+    Top = 40
+  end
+end

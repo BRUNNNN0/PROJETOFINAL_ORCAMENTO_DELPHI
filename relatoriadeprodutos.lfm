@@ -1,0 +1,55 @@
+inherited RelatoriadeProdutosF: TRelatoriadeProdutosF
+  Height = 259
+  Width = 406
+  Caption = 'Sistema eight - Relatório Produto'
+  ClientHeight = 259
+  ClientWidth = 406
+  OnCreate = FormCreate
+  inherited btnGerar: TBitBtn
+    Left = 128
+    OnClick = btnGerarClick
+  end
+  inherited btnSair: TBitBtn
+    Left = 157
+    OnClick = btnSairClick
+  end
+  object qryProdutos: TZQuery[2]
+    Connection = DataModuleF.ZConnection1
+    SQL.Strings = (
+      'SELECT '
+      '    p.produtoid, '
+      '    p.categoriaprodutoid,'
+      '    p.ds_produto, '
+      '    p.obs_produto,'
+      '    p.vl_venda_produto, '
+      '    p.dt_cadastro_produto, '
+      '    p.status_produto, '
+      '    cp.ds_categoria_produto'
+      'FROM '
+      '    produto p'
+      'JOIN '
+      '    categoria_produto cp ON p.categoriaprodutoid = cp.categoriaprodutoid'
+      'GROUP BY '
+      '    p.produtoid, '
+      '    p.categoriaprodutoid, '
+      '    cp.ds_categoria_produto;'
+    )
+    Params = <>
+    Left = 232
+    Top = 169
+  end
+  object frReport1: TfrReport[3]
+    Dataset = frDBDataSet1
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit, pbSettings, pbPageSetup]
+    DataType = dtDataSet
+    Left = 72
+    Top = 169
+  end
+  object frDBDataSet1: TfrDBDataSet[4]
+    DataSet = qryProdutos
+    Left = 152
+    Top = 168
+  end
+end

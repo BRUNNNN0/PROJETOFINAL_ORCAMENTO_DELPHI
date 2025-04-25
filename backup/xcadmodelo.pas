@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ComCtrls, ExtCtrls,
-  Buttons, StdCtrls, DBGrids;
+  Buttons, StdCtrls, DBGrids, Types;
 
 type
 
@@ -16,7 +16,6 @@ type
     BtnCancelar: TBitBtn;
     BtnExcluir: TBitBtn;
     BtnGravar: TBitBtn;
-    BtnEditar: TBitBtn;
     BtnSair: TBitBtn;
     BtnNovo: TBitBtn;
     DBGrid1: TDBGrid;
@@ -29,9 +28,11 @@ type
     Panel3: TPanel;
     Panel4: TPanel;
     SpeedButton1: TSpeedButton;
+    procedure AbaCadastroContextPopup(Sender: TObject; MousePos: TPoint;
+      var Handled: Boolean);
     procedure BtnCancelarClick(Sender: TObject);
     procedure BtnEditarClick(Sender: TObject);
-    procedure BtnExcluirClick(Sender: TObject);
+
     procedure BtnGravarClick(Sender: TObject);
     procedure BtnNovoClick(Sender: TObject);
     procedure BtnSairClick(Sender: TObject);
@@ -66,6 +67,7 @@ end;
 
 procedure TXcadModeloF.BtnGravarClick(Sender: TObject);
 begin
+
   PageControl1.ActivePageIndex := 0;
 end;
 
@@ -79,15 +81,13 @@ begin
   PageControl1.ActivePageIndex := 0;
 end;
 
-procedure TXcadModeloF.BtnExcluirClick(Sender: TObject);
+procedure TXcadModeloF.AbaCadastroContextPopup(Sender: TObject;
+  MousePos: TPoint; var Handled: Boolean);
 begin
-  if MessageDlg('Tem certeza que deseja excluir?', mtConfirmation,
-    [mbYes, mbNo], 0) = mrYes then
-  begin
-    PageControl1.ActivePageIndex := 0;
-    ShowMessage('Registro excluído com sucesso!');
-  end;
+
 end;
+
+
 
 procedure TXcadModeloF.BtnSairClick(Sender: TObject);
 begin

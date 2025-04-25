@@ -5,12 +5,12 @@
     <PathDelim Value="\"/>
     <General>
       <SessionStorage Value="InProjectDir"/>
-      <Title Value="Projeto_final_SistemaOrcamento"/>
+      <Title Value="Eight Orçamentos"/>
       <Scaled Value="True"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
       <XPManifest>
-        <DpiAware Value="True"/>
+        <DpiAware Value="True/PM_V2"/>
       </XPManifest>
       <Icon Value="0"/>
     </General>
@@ -25,6 +25,27 @@
       <FormatVersion Value="2"/>
     </RunParams>
     <RequiredPackages>
+      <Item>
+        <PackageName Value="lazreport"/>
+      </Item>
+      <Item>
+        <PackageName Value="zcore"/>
+      </Item>
+      <Item>
+        <PackageName Value="zparsesql"/>
+      </Item>
+      <Item>
+        <PackageName Value="zplain"/>
+      </Item>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+      <Item>
+        <PackageName Value="zcomponentdesign"/>
+      </Item>
+      <Item>
+        <PackageName Value="zcomponent"/>
+      </Item>
       <Item>
         <PackageName Value="LCL"/>
       </Item>
@@ -46,6 +67,7 @@
         <Filename Value="menuprincipal.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="MenuPrincipalF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MenuPrincipal"/>
       </Unit>
@@ -56,6 +78,158 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadastroCategoria"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadastrocliente.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadastroClienteF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadastroCliente"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadastroproduto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadastroProdutoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadastroProduto"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadastrousuario.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadastroUsuarioF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadastroUsuario"/>
+      </Unit>
+      <Unit>
+        <Filename Value="datamodule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DataModuleF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="DataModule"/>
+      </Unit>
+      <Unit>
+        <Filename Value="selecionar.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SelecionarF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Selecionar"/>
+      </Unit>
+      <Unit>
+        <Filename Value="selecionarcategoria.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SelecionarCategoriaF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="SelecionarCategoria"/>
+      </Unit>
+      <Unit>
+        <Filename Value="fazerorcamento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FazerOrcamentoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FazerOrcamento"/>
+      </Unit>
+      <Unit>
+        <Filename Value="orcamentoitem.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="OrcamentoItemF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="OrcamentoItem"/>
+      </Unit>
+      <Unit>
+        <Filename Value="selecionarproduto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SelecionarProdutoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="SelecionarProduto"/>
+      </Unit>
+      <Unit>
+        <Filename Value="selecionarclientes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SelecionarClientesF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="SelecionarClientes"/>
+      </Unit>
+      <Unit>
+        <Filename Value="teladelogin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TeladeLoginF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="TeladeLogin"/>
+      </Unit>
+      <Unit>
+        <Filename Value="redefinirsenha.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RedefinirSenhaF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="RedefinirSenha"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relatoriadecliente.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RelatoriadeclienteF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Relatoriadecliente"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relatorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RelatorioF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Relatorio"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relatoriadeprodutos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RelatoriadeProdutosF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="RelatoriadeProdutos"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relatoriageralorcamento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RelatoriaGeralOrcamentoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="RelatoriaGeralOrcamento"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relatoriodetalhadoorcamento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="relatorioDetalhadoorcamentoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="relatorioDetalhadoorcamento"/>
+      </Unit>
+      <Unit>
+        <Filename Value="sobre.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SobreF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Sobre"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relatoriocategoria.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RelatorioCategoriaF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="RelatorioCategoria"/>
       </Unit>
     </Units>
   </ProjectOptions>

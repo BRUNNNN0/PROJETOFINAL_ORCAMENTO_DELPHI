@@ -9,10 +9,8 @@
         <Filename Value="Projeto_final_SistemaOrcamento.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="24"/>
+        <CursorPos Y="31"/>
+        <UsageCount Value="200"/>
       </Unit>
       <Unit>
         <Filename Value="xcadmodelo.pas"/>
@@ -21,10 +19,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="XcadModelo"/>
-        <TopLine Value="59"/>
-        <CursorPos X="9" Y="94"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="53"/>
+        <CursorPos X="3" Y="76"/>
         <ComponentState Value="1"/>
-        <UsageCount Value="24"/>
+        <UsageCount Value="200"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -32,23 +31,15 @@
         <Filename Value="menuprincipal.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="MenuPrincipalF"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="MenuPrincipal"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="26"/>
-        <CursorPos Y="61"/>
-        <UsageCount Value="22"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="cadastrocategoriaf.pas"/>
-        <ComponentName Value="XcadModeloF1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="CadastroCategoriaF"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="20"/>
+        <UnitName Value="MenuPrincipal"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="103"/>
+        <CursorPos Y="108"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="cadastrocategoria.pas"/>
@@ -57,132 +48,326 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadastroCategoria"/>
-        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="105"/>
+        <CursorPos X="4" Y="153"/>
+        <UsageCount Value="200"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadastrocliente.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadastroClienteF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadastroCliente"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="8"/>
-        <CursorPos X="5" Y="39"/>
-        <UsageCount Value="21"/>
+        <TopLine Value="126"/>
+        <CursorPos X="125" Y="156"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadastroproduto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadastroProdutoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadastroProduto"/>
+        <TopLine Value="163"/>
+        <CursorPos X="8" Y="205"/>
+        <UsageCount Value="200"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="cadastrousuario.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadastroUsuarioF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadastroUsuario"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="60"/>
+        <CursorPos X="5" Y="73"/>
+        <UsageCount Value="200"/>
+      </Unit>
+      <Unit>
+        <Filename Value="datamodule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DataModuleF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="DataModule"/>
+        <EditorIndex Value="6"/>
+        <CursorPos X="34" Y="40"/>
+        <UsageCount Value="202"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="selecionar.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SelecionarF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Selecionar"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="14"/>
+        <UsageCount Value="200"/>
+      </Unit>
+      <Unit>
+        <Filename Value="selecionarcategoria.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SelecionarCategoriaF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="SelecionarCategoria"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="17"/>
+        <CursorPos X="21" Y="43"/>
+        <UsageCount Value="200"/>
+      </Unit>
+      <Unit>
+        <Filename Value="fazerorcamento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FazerOrcamentoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FazerOrcamento"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="136"/>
+        <CursorPos Y="166"/>
+        <UsageCount Value="114"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="orcamentoitem.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="OrcamentoItemF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="OrcamentoItem"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="107"/>
+        <CursorPos X="8" Y="126"/>
+        <UsageCount Value="114"/>
+      </Unit>
+      <Unit>
+        <Filename Value="selecionarproduto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SelecionarProdutoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="SelecionarProduto"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="45"/>
+        <CursorPos X="37" Y="95"/>
+        <UsageCount Value="110"/>
+      </Unit>
+      <Unit>
+        <Filename Value="selecionarclientes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SelecionarClientesF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="SelecionarClientes"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="17"/>
+        <CursorPos X="22" Y="17"/>
+        <UsageCount Value="103"/>
+      </Unit>
+      <Unit>
+        <Filename Value="teladelogin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TeladeLoginF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="TeladeLogin"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="91"/>
+        <CursorPos X="97" Y="122"/>
+        <UsageCount Value="64"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="redefinirsenha.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RedefinirSenhaF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="RedefinirSenha"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="46"/>
+        <CursorPos Y="67"/>
+        <UsageCount Value="62"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relatoriadecliente.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RelatoriadeclienteF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Relatoriadecliente"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="29"/>
+        <CursorPos Y="38"/>
+        <UsageCount Value="53"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relatorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RelatorioF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Relatorio"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="10" Y="19"/>
+        <UsageCount Value="51"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relatoriadeprodutos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RelatoriadeProdutosF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="RelatoriadeProdutos"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
+        <CursorPos Y="32"/>
+        <UsageCount Value="51"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relatoriageralorcamento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RelatoriaGeralOrcamentoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="RelatoriaGeralOrcamento"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="11"/>
+        <CursorPos X="93" Y="24"/>
+        <UsageCount Value="50"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relatoriodetalhadoorcamento.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="relatorioDetalhadoorcamentoF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="relatorioDetalhadoorcamento"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="67"/>
+        <CursorPos X="63" Y="68"/>
+        <UsageCount Value="49"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="sobre.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SobreF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Sobre"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4"/>
+        <CursorPos Y="49"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="relatoriocategoria.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RelatorioCategoriaF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="RelatorioCategoria"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="12"/>
+        <CursorPos X="71" Y="22"/>
+        <UsageCount Value="41"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadastrocategoriaf.pas"/>
+        <ComponentName Value="XcadModeloF1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadastroCategoriaF"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="CadastroCliente.lfm"/>
+        <ComponentName Value="XcadModeloF1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="39"/>
+        <UsageCount Value="5"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\zco\src\dbc\ZDbcPostgreSql.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="628"/>
+        <CursorPos Y="670"/>
+        <UsageCount Value="78"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\zco\src\component\ZAbstractRODataset.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7672"/>
+        <CursorPos Y="7714"/>
+        <UsageCount Value="78"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\zco\src\component\ZAbstractDataset.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="725"/>
+        <CursorPos X="192" Y="730"/>
+        <UsageCount Value="60"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\zeosdbo-8.0.0-stable\src\component\ZAbstractDataset.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="741"/>
+        <CursorPos Y="752"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\include\control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2951"/>
+        <CursorPos Y="2978"/>
+        <UsageCount Value="7"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\include\buttoncontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="31"/>
+        <CursorPos Y="56"/>
+        <UsageCount Value="7"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\include\buttons.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="145"/>
+        <CursorPos Y="170"/>
+        <UsageCount Value="7"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
+    <JumpHistory HistoryIndex="1">
       <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="31" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="30" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="29" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="28" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="27" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="28" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="29" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="30" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="32" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="31" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="32" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="51" Column="31" TopLine="19"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="52" Column="31" TopLine="17"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="58" Column="36" TopLine="26"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="64" Column="9" TopLine="32"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="75" Column="36" TopLine="40"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="65" Column="38" TopLine="40"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="79" TopLine="44"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="86" TopLine="51"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="73" Column="39" TopLine="52"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="86" Column="39" TopLine="53"/>
-      </Position>
-      <Position>
-        <Filename Value="xcadmodelo.pas"/>
-        <Caret Line="79" Column="40" TopLine="53"/>
+        <Filename Value="cadastroproduto.pas"/>
+        <Caret Line="205" Column="8" TopLine="163"/>
       </Position>
       <Position>
         <Filename Value="menuprincipal.pas"/>
-      </Position>
-      <Position>
-        <Filename Value="cadastrocategoria.pas"/>
-      </Position>
-      <Position>
-        <Filename Value="menuprincipal.pas"/>
-        <Caret Line="8" Column="82" TopLine="18"/>
-      </Position>
-      <Position>
-        <Filename Value="menuprincipal.pas"/>
-        <Caret Line="59" Column="29" TopLine="25"/>
-      </Position>
-      <Position>
-        <Filename Value="cadastrocategoria.pas"/>
-      </Position>
-      <Position>
-        <Filename Value="cadastrocategoria.pas"/>
-        <Caret Line="39" Column="25" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="menuprincipal.pas"/>
-        <Caret Line="58" TopLine="26"/>
-      </Position>
-      <Position>
-        <Filename Value="cadastrocategoria.pas"/>
-        <Caret Line="39" Column="25" TopLine="8"/>
+        <Caret Line="108" TopLine="103"/>
       </Position>
     </JumpHistory>
     <RunParams>

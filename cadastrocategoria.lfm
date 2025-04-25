@@ -1,70 +1,272 @@
 inherited CadastroCategoriaF: TCadastroCategoriaF
-  Caption = 'Cadastro de Categoria'
-  ClientHeight = 634
-  ClientWidth = 828
+  Left = 898
+  Height = 355
+  Top = 555
+  Width = 590
+  Caption = 'Sistema eight - Cadastro de categoria'
+  ClientHeight = 0
+  ClientWidth = 0
   OnClose = FormClose
+  OnCreate = FormCreate
   inherited PageControl1: TPageControl
-    ActivePage = AbaPesquisar
-    TabIndex = 0
+    Height = 355
+    Width = 590
     inherited AbaPesquisar: TTabSheet
+      ClientHeight = 327
+      ClientWidth = 582
       inherited Panel1: TPanel
+        Width = 582
+        ClientWidth = 582
+        inherited SpeedButton1: TSpeedButton
+          Left = 184
+          Top = 24
+          OnClick = SpeedButton1Click
+        end
+        inherited Label1: TLabel
+          Left = 16
+          Width = 102
+          Caption = 'Buscar código:'
+        end
+        inherited BtnNovo: TBitBtn
+          Left = 487
+          OnClick = BtnNovoClick
+        end
         object edirPesquisarID: TEdit[3]
-          Left = 88
+          Left = 144
           Height = 23
-          Top = 25
-          Width = 40
+          Top = 24
+          Width = 32
           NumbersOnly = True
           TabOrder = 1
         end
       end
+      inherited Panel2: TPanel
+        Height = 71
+        Top = 256
+        Width = 582
+        ClientHeight = 71
+        ClientWidth = 582
+        inherited BtnSair: TBitBtn
+          Left = 487
+        end
+      end
+      inherited DBGrid1: TDBGrid
+        Height = 186
+        Width = 582
+        Columns = <        
+          item
+            Alignment = taCenter
+            Color = clWhite
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Código'
+            Width = 150
+            FieldName = 'categoriaprodutoid'
+          end        
+          item
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Categoria'
+            Width = 400
+            FieldName = 'ds_categoria_produto'
+          end>
+        DataSource = DataSource1
+        ReadOnly = True
+      end
     end
     inherited AbaCadastro: TTabSheet
+      ClientHeight = 327
+      ClientWidth = 582
       inherited Panel3: TPanel
-        TabOrder = 1
+        Width = 582
       end
       inherited Panel4: TPanel
-        TabOrder = 3
+        Top = 257
+        Width = 582
+        ClientWidth = 582
+        inherited BtnCancelar: TBitBtn
+          Left = 474
+          OnClick = BtnCancelarClick
+          TabOrder = 3
+        end
+        inherited BtnGravar: TBitBtn
+          OnClick = BtnGravarClick
+        end
+        inherited BtnExcluir: TBitBtn
+          Left = 376
+          OnClick = BtnExcluirClick
+          TabOrder = 2
+        end
+        object BtnEditar: TBitBtn[3]
+          Left = 136
+          Height = 30
+          Top = 24
+          Width = 91
+          Caption = 'Editar'
+          Glyph.Data = {
+            42010000424D4201000000000000760000002800000011000000110000000100
+            040000000000CC00000000000000000000001000000010000000000000000000
+            BF0000BF000000BFBF00BF000000BF00BF00BFBF0000C0C0C000808080000000
+            FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00777777777777
+            7777700000007777777777777777700000007777777000000000700000007777
+            7770FFFFFFF07000000077777770FCCCCCF07000000070000000FFFFFFF07000
+            000070FFFFF0FCCCCCF07000000070FCCCC0FFFFFFF07000000070FFFFF0FCCF
+            00007000000070FCCCC0FFFF0F077000000070FFFFF0FFFF00777000000070FC
+            CF00000007777000000070FFFF0F077777777000000070FFFF00777777777000
+            0000700000077777777770000000777777777777777770000000777777777777
+            777770000000
+          }
+          OnClick = BtnEditarClick
+          TabOrder = 1
+        end
       end
       object Label2: TLabel[2]
-        Left = 75
-        Height = 20
-        Top = 110
-        Width = 20
+        Left = 176
+        Height = 30
+        Top = 136
+        Width = 28
         Caption = 'ID:'
         Font.CharSet = ANSI_CHARSET
-        Font.Height = -15
+        Font.Height = -21
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold]
         ParentFont = False
       end
       object Label3: TLabel[3]
-        Left = 24
-        Height = 20
-        Top = 145
-        Width = 71
+        Left = 104
+        Height = 30
+        Top = 177
+        Width = 100
         Caption = 'Categoria:'
         Font.CharSet = ANSI_CHARSET
-        Font.Height = -15
+        Font.Height = -21
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold]
         ParentFont = False
       end
-      object editIDcate: TEdit[4]
-        Left = 104
-        Height = 23
-        Top = 109
-        Width = 32
-        TabOrder = 0
+      object DBEdit1: TDBEdit[4]
+        Left = 216
+        Height = 29
+        Top = 137
+        Width = 24
+        DataField = 'categoriaprodutoid'
+        DataSource = DataSource1
+        ReadOnly = True
+        Alignment = taCenter
+        Color = clScrollBar
+        Enabled = False
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 3
+        TabStop = False
       end
-      object editCategoria: TEdit[5]
-        Left = 104
-        Height = 23
-        Top = 144
-        Width = 240
+      object DBEdit2: TDBEdit[5]
+        Left = 216
+        Height = 29
+        Top = 178
+        Width = 264
+        DataField = 'ds_categoria_produto'
+        DataSource = DataSource1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 50
+        ParentFont = False
         TabOrder = 2
       end
     end
+  end
+  object ZCadastro1: TZQuery[1]
+    Connection = DataModuleF.ZConnection1
+    AfterInsert = ZCadastro1AfterInsert
+    UpdateObject = ZUpdateSQL1
+    SQL.Strings = (
+      'select *  from categoria_produto ;'
+    )
+    Params = <>
+    Left = 384
+    Top = 40
+    object ZCadastro1categoriaprodutoid: TZIntegerField
+      Alignment = taCenter
+      DisplayLabel = 'ID'
+      FieldKind = fkData
+      FieldName = 'categoriaprodutoid'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ZCadastro1ds_categoria_produto: TZRawStringField
+      DisplayLabel = 'CATEGORIA'
+      DisplayWidth = 50
+      FieldKind = fkData
+      FieldName = 'ds_categoria_produto'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 50
+    end
+  end
+  object ZUpdateSQL1: TZUpdateSQL[2]
+    DeleteSQL.Strings = (
+      'DELETE FROM categoria_produto'
+      'WHERE'
+      '  categoria_produto.categoriaprodutoid = :OLD_categoriaprodutoid'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO categoria_produto'
+      '  (categoriaprodutoid, ds_categoria_produto)'
+      'VALUES'
+      '  (:categoriaprodutoid, :ds_categoria_produto)'
+    )
+    ModifySQL.Strings = (
+      'UPDATE categoria_produto SET'
+      '  categoriaprodutoid = :categoriaprodutoid,'
+      '  ds_categoria_produto = :ds_categoria_produto'
+      'WHERE'
+      '  categoria_produto.categoriaprodutoid = :OLD_categoriaprodutoid'
+    )
+    UseSequenceFieldForRefreshSQL = False
+    Left = 456
+    Top = 40
+    ParamData = <    
+      item
+        Name = 'categoriaprodutoid'
+      end    
+      item
+        Name = 'ds_categoria_produto'
+      end    
+      item
+        Name = 'OLD_categoriaprodutoid'
+      end>
+  end
+  object DataSource1: TDataSource[3]
+    DataSet = ZCadastro1
+    OnDataChange = DataSource1DataChange
+    Left = 312
+    Top = 40
+  end
+  object ZQuery1: TZQuery[4]
+    Params = <>
+    Left = 232
+    Top = 40
   end
 end

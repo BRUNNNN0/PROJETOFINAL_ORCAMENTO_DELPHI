@@ -1,0 +1,344 @@
+inherited CadastroUsuarioF: TCadastroUsuarioF
+  Left = 459
+  Height = 468
+  Top = 345
+  Width = 830
+  Caption = 'Sistema eight - Cadastro de usuários'
+  ClientHeight = 468
+  ClientWidth = 830
+  OnClose = FormClose
+  OnCreate = FormCreate
+  inherited PageControl1: TPageControl
+    Height = 468
+    Width = 830
+    Font.CharSet = ANSI_CHARSET
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    inherited AbaPesquisar: TTabSheet
+      ClientHeight = 440
+      ClientWidth = 822
+      inherited Panel1: TPanel
+        Width = 822
+        ClientWidth = 822
+        inherited SpeedButton1: TSpeedButton
+          Left = 184
+          OnClick = SpeedButton1Click
+        end
+        inherited Label1: TLabel
+          Width = 106
+          Caption = 'Buscar código: '
+        end
+        inherited BtnNovo: TBitBtn
+          Left = 727
+          OnClick = BtnNovoClick
+        end
+        object EditPesquisa: TEdit[3]
+          Left = 144
+          Height = 23
+          Top = 25
+          Width = 32
+          NumbersOnly = True
+          TabOrder = 1
+        end
+      end
+      inherited Panel2: TPanel
+        Top = 370
+        Width = 822
+        ClientWidth = 822
+        inherited BtnSair: TBitBtn
+          Left = 727
+        end
+      end
+      inherited DBGrid1: TDBGrid
+        Height = 300
+        Width = 822
+        Columns = <        
+          item
+            Alignment = taCenter
+            PickList.Strings = (            )
+            Title.Alignment = taCenter
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Código'
+            Width = 90
+            FieldName = 'id'
+          end        
+          item
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Nome'
+            Width = 400
+            FieldName = 'nome_completo'
+          end        
+          item
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Usuário'
+            Width = 100
+            FieldName = 'usuario'
+          end        
+          item
+            PickList.Strings = (            )
+            Title.Font.CharSet = ANSI_CHARSET
+            Title.Font.Pitch = fpVariable
+            Title.Font.Quality = fqDraft
+            Title.Font.Style = [fsBold]
+            Title.Caption = 'Senha'
+            Width = 200
+            FieldName = 'senha'
+          end>
+        DataSource = DataSource1
+        ReadOnly = True
+      end
+    end
+    inherited AbaCadastro: TTabSheet
+      ClientHeight = 440
+      ClientWidth = 822
+      Font.CharSet = ANSI_CHARSET
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      inherited Panel3: TPanel
+        Width = 822
+      end
+      inherited Panel4: TPanel
+        Top = 370
+        Width = 822
+        ClientWidth = 822
+        inherited BtnCancelar: TBitBtn
+          Left = 714
+          OnClick = BtnCancelarClick
+        end
+        inherited BtnGravar: TBitBtn
+          OnClick = BtnGravarClick
+        end
+        inherited BtnExcluir: TBitBtn
+          Left = 594
+          OnClick = BtnExcluirClick
+        end
+      end
+      object Label2: TLabel[2]
+        Left = 85
+        Height = 30
+        Top = 121
+        Width = 28
+        Caption = 'ID:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -21
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label3: TLabel[3]
+        Left = 32
+        Height = 30
+        Top = 224
+        Width = 81
+        Caption = 'Usúario:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -21
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label4: TLabel[4]
+        Left = 47
+        Height = 30
+        Top = 176
+        Width = 66
+        Caption = 'Nome:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -21
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label5: TLabel[5]
+        Left = 256
+        Height = 30
+        Top = 224
+        Width = 66
+        Caption = 'Senha:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -21
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        OnClick = Label5Click
+      end
+      object DBEdit1: TDBEdit[6]
+        Left = 120
+        Height = 33
+        Top = 121
+        Width = 32
+        DataField = 'id'
+        DataSource = DataSource1
+        Alignment = taRightJustify
+        Color = clScrollBar
+        Enabled = False
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 2
+        TabStop = False
+      end
+      object DBEdit2: TDBEdit[7]
+        Left = 120
+        Height = 33
+        Top = 176
+        Width = 320
+        DataField = 'nome_completo'
+        DataSource = DataSource1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 3
+      end
+      object DBEdit3: TDBEdit[8]
+        Left = 120
+        Height = 33
+        Top = 224
+        Width = 104
+        DataField = 'usuario'
+        DataSource = DataSource1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 4
+      end
+      object DBEdit4: TDBEdit[9]
+        Left = 328
+        Height = 33
+        Top = 225
+        Width = 112
+        DataField = 'senha'
+        DataSource = DataSource1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 5
+      end
+    end
+  end
+  object DataSource1: TDataSource[1]
+    DataSet = TabelaUsuarios
+    Left = 328
+    Top = 40
+  end
+  object TabelaUsuarios: TZQuery[2]
+    Connection = DataModuleF.ZConnection1
+    AfterInsert = TabelaUsuariosAfterInsert
+    UpdateObject = ZUpdateSQL1
+    SQL.Strings = (
+      'select * from usuarios; '
+    )
+    Params = <>
+    Left = 408
+    Top = 40
+    object TabelaUsuariosid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TabelaUsuariosusuario: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'usuario'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object TabelaUsuariosnome_completo: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'nome_completo'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+    object TabelaUsuariossenha: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'senha'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+  end
+  object ZUpdateSQL1: TZUpdateSQL[3]
+    DeleteSQL.Strings = (
+      'DELETE FROM usuarios'
+      'WHERE'
+      '  ((usuarios.id IS NULL AND :OLD_id IS NULL) OR (usuarios.id = :OLD_id))'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO usuarios'
+      '  (id, usuario, nome_completo, senha)'
+      'VALUES'
+      '  (:id, :usuario, :nome_completo, :senha)'
+    )
+    ModifySQL.Strings = (
+      'UPDATE usuarios SET'
+      '  id = :id,'
+      '  usuario = :usuario,'
+      '  nome_completo = :nome_completo,'
+      '  senha = :senha'
+      'WHERE'
+      '  ((usuarios.id IS NULL AND :OLD_id IS NULL) OR (usuarios.id = :OLD_id))'
+    )
+    UseSequenceFieldForRefreshSQL = False
+    Left = 504
+    Top = 40
+    ParamData = <    
+      item
+        Name = 'id'
+      end    
+      item
+        Name = 'usuario'
+      end    
+      item
+        Name = 'nome_completo'
+      end    
+      item
+        Name = 'senha'
+      end    
+      item
+        Name = 'OLD_id'
+      end>
+  end
+end

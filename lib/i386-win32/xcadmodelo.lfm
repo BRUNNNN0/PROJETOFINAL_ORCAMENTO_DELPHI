@@ -1,18 +1,18 @@
 object XcadModeloF: TXcadModeloF
-  Left = 376
+  Left = 689
   Height = 634
-  Top = 120
-  Width = 828
+  Top = 161
+  Width = 706
   Caption = 'Modelo'
   ClientHeight = 634
-  ClientWidth = 828
+  ClientWidth = 706
   OnShow = FormShow
   LCLVersion = '3.8.0.0'
   object PageControl1: TPageControl
     Left = 0
     Height = 634
     Top = 0
-    Width = 828
+    Width = 706
     ActivePage = AbaCadastro
     Align = alClient
     TabIndex = 1
@@ -20,15 +20,15 @@ object XcadModeloF: TXcadModeloF
     object AbaPesquisar: TTabSheet
       Caption = 'Pesquisar'
       ClientHeight = 606
-      ClientWidth = 820
+      ClientWidth = 698
       object Panel1: TPanel
         Left = 0
         Height = 70
         Top = 0
-        Width = 820
+        Width = 698
         Align = alTop
         ClientHeight = 70
-        ClientWidth = 820
+        ClientWidth = 698
         TabOrder = 0
         object SpeedButton1: TSpeedButton
           Left = 136
@@ -63,7 +63,7 @@ object XcadModeloF: TXcadModeloF
           ParentFont = False
         end
         object BtnNovo: TBitBtn
-          Left = 725
+          Left = 603
           Height = 30
           Top = 24
           Width = 75
@@ -125,13 +125,13 @@ object XcadModeloF: TXcadModeloF
         Left = 0
         Height = 70
         Top = 536
-        Width = 820
+        Width = 698
         Align = alBottom
         ClientHeight = 70
-        ClientWidth = 820
+        ClientWidth = 698
         TabOrder = 1
         object BtnSair: TBitBtn
-          Left = 725
+          Left = 603
           Height = 32
           Top = 16
           Width = 75
@@ -215,7 +215,7 @@ object XcadModeloF: TXcadModeloF
         Left = 0
         Height = 466
         Top = 70
-        Width = 820
+        Width = 698
         Align = alClient
         Color = clWindow
         Columns = <>
@@ -226,12 +226,12 @@ object XcadModeloF: TXcadModeloF
     object AbaCadastro: TTabSheet
       Caption = 'Cadastro'
       ClientHeight = 606
-      ClientWidth = 820
+      ClientWidth = 698
       object Panel3: TPanel
         Left = 0
         Height = 70
         Top = 0
-        Width = 820
+        Width = 698
         Align = alTop
         TabOrder = 0
       end
@@ -239,13 +239,13 @@ object XcadModeloF: TXcadModeloF
         Left = 0
         Height = 70
         Top = 536
-        Width = 820
+        Width = 698
         Align = alBottom
         ClientHeight = 70
-        ClientWidth = 820
+        ClientWidth = 698
         TabOrder = 1
         object BtnCancelar: TBitBtn
-          Left = 712
+          Left = 590
           Height = 30
           Top = 24
           Width = 75
@@ -280,7 +280,7 @@ object XcadModeloF: TXcadModeloF
             BFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBF000000
           }
           OnClick = BtnCancelarClick
-          TabOrder = 3
+          TabOrder = 2
         end
         object BtnGravar: TBitBtn
           Left = 32
@@ -319,33 +319,12 @@ object XcadModeloF: TXcadModeloF
           OnClick = BtnGravarClick
           TabOrder = 0
         end
-        object BtnEditar: TBitBtn
-          Left = 152
-          Height = 30
-          Top = 24
-          Width = 75
-          Caption = 'Editar'
-          Glyph.Data = {
-            42010000424D4201000000000000760000002800000011000000110000000100
-            040000000000CC00000000000000000000001000000010000000000000000000
-            BF0000BF000000BFBF00BF000000BF00BF00BFBF0000C0C0C000808080000000
-            FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00777777777777
-            7777700000007777777777777777700000007777777000000000700000007777
-            7770FFFFFFF07000000077777770FCCCCCF07000000070000000FFFFFFF07000
-            000070FFFFF0FCCCCCF07000000070FCCCC0FFFFFFF07000000070FFFFF0FCCF
-            00007000000070FCCCC0FFFF0F077000000070FFFFF0FFFF00777000000070FC
-            CF00000007777000000070FFFF0F077777777000000070FFFF00777777777000
-            0000700000077777777770000000777777777777777770000000777777777777
-            777770000000
-          }
-          OnClick = BtnEditarClick
-          TabOrder = 1
-        end
         object BtnExcluir: TBitBtn
-          Left = 592
+          Left = 470
           Height = 30
           Top = 24
           Width = 75
+          Anchors = [akTop, akRight]
           Caption = 'Excluir'
           Glyph.Data = {
             42010000424D4201000000000000760000002800000011000000110000000100
@@ -360,8 +339,7 @@ object XcadModeloF: TXcadModeloF
             0000777700000000077770000000777777700077777770000000777777777777
             777770000000
           }
-          OnClick = BtnExcluirClick
-          TabOrder = 2
+          TabOrder = 1
         end
       end
     end

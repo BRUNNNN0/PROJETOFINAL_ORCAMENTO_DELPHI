@@ -1,0 +1,39 @@
+inherited RelatorioCategoriaF: TRelatorioCategoriaF
+  Width = 371
+  Caption = 'Sistema eight - Relatório Categoria'
+  ClientWidth = 371
+  inherited btnGerar: TBitBtn
+    Left = 104
+    Top = 56
+    OnClick = btnGerarClick
+  end
+  inherited btnSair: TBitBtn
+    Left = 133
+    Top = 120
+    OnClick = btnSairClick
+  end
+  object frReport1: TfrReport[2]
+    Dataset = frDBDataSet1
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit, pbSettings, pbPageSetup]
+    DataType = dtDataSet
+    Left = 63
+    Top = 221
+  end
+  object frDBDataSet1: TfrDBDataSet[3]
+    DataSet = qryCategoria
+    Left = 192
+    Top = 221
+  end
+  object qryCategoria: TZQuery[4]
+    Connection = DataModuleF.ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from categoria_produto;'
+    )
+    Params = <>
+    Left = 328
+    Top = 221
+  end
+end

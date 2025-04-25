@@ -1,0 +1,89 @@
+inherited relatorioDetalhadoorcamentoF: TrelatorioDetalhadoorcamentoF
+  Height = 295
+  Top = 327
+  Width = 424
+  Caption = 'Sistema eight - Relatório Detalhado'
+  ClientHeight = 295
+  ClientWidth = 424
+  OnCreate = FormCreate
+  inherited btnGerar: TBitBtn
+    Left = 224
+    Height = 32
+    Top = 120
+    Width = 99
+    OnClick = btnGerarClick
+    TabOrder = 1
+  end
+  inherited btnSair: TBitBtn
+    Left = 112
+    Top = 120
+    Width = 99
+    OnClick = btnSairClick
+    TabOrder = 2
+  end
+  object edtOrcamentoID: TEdit[2]
+    Left = 304
+    Height = 23
+    Top = 72
+    Width = 32
+    NumbersOnly = True
+    TabOrder = 0
+  end
+  object Label1: TLabel[3]
+    Left = 96
+    Height = 21
+    Top = 73
+    Width = 197
+    Caption = 'Digite o ID do orçamento:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object qryOrcamento_item: TZQuery[4]
+    Connection = DataModuleF.ZConnection1
+    SQL.Strings = (
+      'SELECT '
+      '    oi.orcamentoid, '
+      '    oi.orcamentoitemid, '
+      '    oi.produtodesc, '
+      '    oi.qt_produto, '
+      '    oi.vl_unitario, '
+      '    oi.vl_total, '
+      '    o.clienteid, '
+      '    o.dt_orcamento, '
+      '    o.dt_validade_orcamento, '
+      '    o.vl_total_orcamento, '
+      '    c.nome_cliente'
+      'FROM '
+      '    orcamento_item oi'
+      'JOIN '
+      '    orcamento o ON oi.orcamentoid = o.orcamentoid'
+      'JOIN '
+      '    cliente c ON o.clienteid = c.clienteid'
+      'WHERE '
+      '    oi.orcamentoid = 1'
+      'ORDER BY '
+      '    oi.orcamentoid, oi.orcamentoitemid;'
+    )
+    Params = <>
+    Left = 240
+    Top = 184
+  end
+  object frDBDataSet1: TfrDBDataSet[5]
+    DataSet = qryOrcamento_item
+    Left = 144
+    Top = 184
+  end
+  object frReport1: TfrReport[6]
+    Dataset = frDBDataSet1
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit, pbSettings, pbPageSetup]
+    DataType = dtDataSet
+    Left = 64
+    Top = 184
+  end
+end

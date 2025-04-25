@@ -1,0 +1,52 @@
+inherited RelatoriaGeralOrcamentoF: TRelatoriaGeralOrcamentoF
+  Height = 262
+  Width = 384
+  Caption = 'Sistema eight - Relatório Geral'
+  ClientHeight = 262
+  ClientWidth = 384
+  inherited btnGerar: TBitBtn
+    Left = 112
+    OnClick = btnGerarClick
+  end
+  inherited btnSair: TBitBtn
+    Left = 141
+    OnClick = btnSairClick
+  end
+  object frReport1: TfrReport[2]
+    Dataset = frDBDataSet1
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit, pbSettings, pbPageSetup]
+    DataType = dtDataSet
+    Left = 72
+    Top = 168
+  end
+  object frDBDataSet1: TfrDBDataSet[3]
+    DataSet = qryOrcamento
+    Left = 152
+    Top = 168
+  end
+  object qryOrcamento: TZQuery[4]
+    Connection = DataModuleF.ZConnection1
+    SQL.Strings = (
+      'SELECT '
+      '    o.orcamentoid, '
+      '    o.clienteid,'
+      '    o.dt_orcamento, '
+      '    o.dt_validade_orcamento, '
+      '    o.vl_total_orcamento,'
+      '    c.nome_cliente'
+      'FROM '
+      '    orcamento o'
+      'JOIN '
+      '    cliente c ON o.clienteid = c.clienteid'
+      'GROUP BY '
+      '    o.orcamentoid, '
+      '    o.clienteid, '
+      '    c.nome_cliente;'
+    )
+    Params = <>
+    Left = 232
+    Top = 168
+  end
+end

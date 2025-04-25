@@ -17,18 +17,22 @@ object MenuPrincipalF: TMenuPrincipalF
       end
       object MNclienteC: TMenuItem
         Caption = 'Clientes'
+        OnClick = MNclienteCClick
       end
       object MNprodutoC: TMenuItem
         Caption = 'Produtos'
+        OnClick = MNprodutoCClick
       end
       object MNusuariosC: TMenuItem
         Caption = 'Usuários'
+        OnClick = MNusuariosCClick
       end
     end
     object MNVendas: TMenuItem
       Caption = 'Vendas'
       object MNorcamentoV: TMenuItem
         Caption = 'Orçamentos'
+        OnClick = MNorcamentoVClick
       end
     end
     object MenuItem8: TMenuItem
